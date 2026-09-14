@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+input {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+
+@theme {
+  --color-brand-accent: #ea580c;
+  --color-brand-primary: #0f172a;
+  --color-brand-secondary: #475569;
+
+  --color-primary: #f8fafc;
+  --color-bor-primary: #e2e8f0;
+}

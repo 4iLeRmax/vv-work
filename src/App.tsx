@@ -2,9 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home/Home";
 import PartnersPage from "./pages/partners/Partners";
 import ContactsPage from "./pages/contacts/Contacts";
-import Header from "./components/common/Header";
-import Footer from "./components/common/Footer";
 import PartnerDetailPage from "./pages/partners/partner-detail/PartnerDetailPage";
+import Header from "./components/header/header";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
