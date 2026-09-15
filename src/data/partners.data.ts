@@ -5,7 +5,8 @@ export const partners: Partner[] = [
     id: "p-1",
     slug: "budmaster-polska",
     name: "BudMaster Polska",
-    logoUrl: "/logos/budmaster-polska.svg",
+    imgURL:
+      "https://images.unsplash.com/photo-1599707254554-027aeb4deacd?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     industry: "Будівництво",
     location: { city: "Варшава", country: "Польща", countryCode: "PL" },
     description:
@@ -27,7 +28,8 @@ export const partners: Partner[] = [
     id: "p-2",
     slug: "techflow-solutions",
     name: "TechFlow Solutions",
-    logoUrl: "/logos/techflow-solutions.svg",
+    imgURL:
+      "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     industry: "IT",
     location: { city: "Берлін", country: "Німеччина", countryCode: "DE" },
     description:
@@ -43,13 +45,14 @@ export const partners: Partner[] = [
       "Бюджет на навчання",
       "Опційна віддалена робота",
     ],
-    verified: true,
+    verified: false,
   },
   {
     id: "p-3",
     slug: "eurologistics-group",
     name: "EuroLogistics Group",
-    logoUrl: "/logos/eurologistics-group.svg",
+    imgURL:
+      "https://plus.unsplash.com/premium_photo-1661932036915-4fd90bec6e8a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     industry: "Логістика",
     location: { city: "Прага", country: "Чехія", countryCode: "CZ" },
     description:
@@ -70,8 +73,9 @@ export const partners: Partner[] = [
     id: "p-4",
     slug: "grand-hotel-alpina",
     name: "Grand Hotel Alpina",
-    logoUrl: "/logos/grand-hotel-alpina.svg",
-    industry: "Готельно-ресторанна сфера",
+    imgURL:
+      "https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?q=80&w=1189&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    industry: "Готель",
     location: { city: "Інсбрук", country: "Австрія", countryCode: "AT" },
     description: "Чотиризірковий готель в Альпах із рестораном та spa-центром.",
     about:
@@ -91,7 +95,8 @@ export const partners: Partner[] = [
     id: "p-5",
     slug: "freshfood-manufacturing",
     name: "FreshFood Manufacturing",
-    logoUrl: "/logos/freshfood-manufacturing.svg",
+    imgURL:
+      "https://images.unsplash.com/photo-1717386255773-1e3037c81788?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     industry: "Виробництво",
     location: { city: "Роттердам", country: "Нідерланди", countryCode: "NL" },
     description:
@@ -106,13 +111,14 @@ export const partners: Partner[] = [
       "Доплата за нічні зміни",
       "Транспорт від житла до заводу",
     ],
-    verified: true,
+    verified: false,
   },
   {
     id: "p-6",
     slug: "transeuro-cargo",
     name: "TransEuro Cargo",
-    logoUrl: "/logos/transeuro-cargo.svg",
+    imgURL:
+      "https://plus.unsplash.com/premium_photo-1682144324433-ae1ee89a0238?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     industry: "Водії",
     location: { city: "Катовіце", country: "Польща", countryCode: "PL" },
     description: "Міжнародні вантажоперевезення категорії C+E по маршрутах ЄС.",
@@ -133,7 +139,8 @@ export const partners: Partner[] = [
     id: "p-7",
     slug: "cleancity-services",
     name: "CleanCity Services",
-    logoUrl: "/logos/cleancity-services.svg",
+    imgURL:
+      "https://plus.unsplash.com/premium_photo-1663011218145-c1d0c3ba3542?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     industry: "Інші",
     location: { city: "Мюнхен", country: "Німеччина", countryCode: "DE" },
     description:

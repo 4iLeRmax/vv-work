@@ -1,11 +1,14 @@
-export type JobCategory =
-  | "Будівництво"
-  | "Виробництво"
-  | "Логістика"
-  | "Готельно-ресторанна сфера"
-  | "IT"
-  | "Водії"
-  | "Інші";
+export const JOB_CATEGORIES = [
+  "Будівництво",
+  "Виробництво",
+  "Логістика",
+  "Готель",
+  "IT",
+  "Водії",
+  "Інші",
+] as const;
+
+export type JobCategory = (typeof JOB_CATEGORIES)[number];
 
 export type EmploymentType =
   | "full-time"
@@ -36,7 +39,7 @@ export interface Partner {
   id: string;
   slug: string;
   name: string;
-  logoUrl: string;
+  imgURL: string;
   industry: JobCategory;
   location: Location;
   description: string;

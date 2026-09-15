@@ -1,4 +1,4 @@
-import type { Job } from "../types";
+import type { Job, JobCategory } from "../types";
 
 export const jobs: Job[] = [
   {
@@ -432,7 +432,7 @@ export const jobs: Job[] = [
     partnerId: "p-4",
     partnerSlug: "grand-hotel-alpina",
     title: "Офіціант/ка",
-    category: "Готельно-ресторанна сфера",
+    category: "Готель",
     location: { city: "Інсбрук", country: "Австрія", countryCode: "AT" },
     remote: false,
     employmentType: "seasonal",
@@ -455,7 +455,7 @@ export const jobs: Job[] = [
     partnerId: "p-4",
     partnerSlug: "grand-hotel-alpina",
     title: "Покоївка",
-    category: "Готельно-ресторанна сфера",
+    category: "Готель",
     location: { city: "Інсбрук", country: "Австрія", countryCode: "AT" },
     remote: false,
     employmentType: "seasonal",
@@ -474,7 +474,7 @@ export const jobs: Job[] = [
     partnerId: "p-4",
     partnerSlug: "grand-hotel-alpina",
     title: "Кухар (гарячий цех)",
-    category: "Готельно-ресторанна сфера",
+    category: "Готель",
     location: { city: "Інсбрук", country: "Австрія", countryCode: "AT" },
     remote: false,
     employmentType: "full-time",
@@ -496,7 +496,7 @@ export const jobs: Job[] = [
     partnerId: "p-4",
     partnerSlug: "grand-hotel-alpina",
     title: "Адміністратор ресепшн",
-    category: "Готельно-ресторанна сфера",
+    category: "Готель",
     location: { city: "Інсбрук", country: "Австрія", countryCode: "AT" },
     remote: false,
     employmentType: "full-time",
@@ -519,7 +519,7 @@ export const jobs: Job[] = [
     partnerId: "p-4",
     partnerSlug: "grand-hotel-alpina",
     title: "Бармен/ка",
-    category: "Готельно-ресторанна сфера",
+    category: "Готель",
     location: { city: "Інсбрук", country: "Австрія", countryCode: "AT" },
     remote: false,
     employmentType: "seasonal",

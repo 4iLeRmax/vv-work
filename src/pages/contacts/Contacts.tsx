@@ -1,9 +1,14 @@
 import React from "react";
+import ContactsHero from "../../components/contacts-page/contacts-hero";
+import MainContent from "../../components/contacts-page/main-content";
 
 export default function ContactsPage() {
   return (
     <>
-      <div>Contacts</div>
+      <div>
+        <ContactsHero />
+        <MainContent />
+      </div>
     </>
   );
 }

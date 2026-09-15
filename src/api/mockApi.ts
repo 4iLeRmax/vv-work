@@ -4,7 +4,7 @@ import type { Job, Partner } from "../types";
 
 const MIN_DELAY_MS = 300;
 const MAX_DELAY_MS = 800;
-const ERROR_RATE = 0.2; // ~1 in 5 requests fails
+const ERROR_RATE = 0.2;
 
 class ApiError extends Error {
   status: number;
