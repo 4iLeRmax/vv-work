@@ -8,7 +8,7 @@ interface CategoryCardProps {
 export default function CategoryCard({ data }: CategoryCardProps) {
   return (
     <>
-      <div className="p-7 rounded-2xl border border-brand-secondary">
+      <div className="p-7 rounded-2xl border border-bor-primary bg-primary">
         <div className="w-12 h-12 bg-brand-accent/20 rounded-xl flex items-center justify-center">
           {data.icon(24, "text-brand-accent")}
         </div>
