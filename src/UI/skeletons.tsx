@@ -2,16 +2,15 @@ import Container from "./container";
 
 export function PartnersListSkeleton() {
   return (
-    <section className="py-16">
+    <section className="py-10 min-[768px]:py-14 min-[1440px]:py-16">
       <Container>
-        <div className="grid grid-cols-3 gap-6">
-          <div className="w-full h-120 rounded-xl bg-bor-primary"></div>
-          <div className="w-full h-120 rounded-xl bg-bor-primary"></div>
-          <div className="w-full h-120 rounded-xl bg-bor-primary"></div>
-          <div className="w-full h-120 rounded-xl bg-bor-primary"></div>
-          <div className="w-full h-120 rounded-xl bg-bor-primary"></div>
-          <div className="w-full h-120 rounded-xl bg-bor-primary"></div>
-          <div className="w-full h-120 rounded-xl bg-bor-primary"></div>
+        <div className="grid grid-cols-1 gap-6 min-[768px]:grid-cols-2 min-[1280px]:grid-cols-3">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div
+              key={i}
+              className="w-full h-96 min-[1440px]:h-120 rounded-xl bg-bor-primary"
+            ></div>
+          ))}
         </div>
       </Container>
     </section>

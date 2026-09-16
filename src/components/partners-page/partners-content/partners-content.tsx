@@ -12,16 +12,14 @@ export default function PartnersContent() {
   if (error) return <RetryBlock onRetry={retry} />;
 
   return (
-    <>
-      <section className="py-16">
-        <Container>
-          <div className="grid grid-cols-3 gap-6">
-            {partners.map((p) => (
-              <PartnerCard key={p.id} partner={p} />
-            ))}
-          </div>
-        </Container>
-      </section>
-    </>
+    <section className="py-10 min-[768px]:py-14 min-[1440px]:py-16">
+      <Container>
+        <div className="grid grid-cols-1 gap-6 min-[768px]:grid-cols-2 min-[1280px]:grid-cols-3">
+          {partners.map((p) => (
+            <PartnerCard key={p.id} partner={p} />
+          ))}
+        </div>
+      </Container>
+    </section>
   );
 }
