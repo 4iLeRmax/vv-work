@@ -59,12 +59,10 @@ const data: TCategoryCards[] = [
 
 export default function Categories() {
   return (
-    <>
-      <div className="grid grid-cols-3 gap-6 mt-14">
-        {data.map((el) => (
-          <CategoryCard key={el.title} data={el} />
-        ))}
-      </div>
-    </>
+    <div className="grid grid-cols-1 gap-4 mt-10 min-[768px]:grid-cols-2 min-[768px]:gap-6 min-[768px]:mt-12 min-[1440px]:grid-cols-3 min-[1440px]:mt-14">
+      {data.map((el) => (
+        <CategoryCard key={el.title} data={el} />
+      ))}
+    </div>
   );
 }

@@ -27,16 +27,14 @@ const cards = [
 
 export default function PopularDirections() {
   return (
-    <>
-      <section className=" py-10 bg-primary">
-        <Container>
-          <div className="flex items-center justify-between gap-6">
-            {cards.map((c) => (
-              <DirectionCard key={c.title} info={c} />
-            ))}
-          </div>
-        </Container>
-      </section>
-    </>
+    <section className="py-8 min-[768px]:py-10 bg-primary">
+      <Container>
+        <div className="grid grid-cols-2 gap-4 min-[768px]:grid-cols-3 min-[768px]:gap-6 min-[1440px]:grid-cols-5">
+          {cards.map((c) => (
+            <DirectionCard key={c.title} info={c} />
+          ))}
+        </div>
+      </Container>
+    </section>
   );
 }

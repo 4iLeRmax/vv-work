@@ -8,10 +8,10 @@ interface RecommendedJobCardProps {
 
 export default function RecommendedJobCard({ job }: RecommendedJobCardProps) {
   return (
-    <div className="rounded-2xl border border-bor-primary bg-white p-5 sm:p-6">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+    <div className="rounded-2xl border border-bor-primary bg-white p-5 min-[768px]:p-6">
+      <div className="flex flex-col items-start gap-4 min-[768px]:flex-row min-[768px]:items-start min-[768px]:justify-between">
         <div className="min-w-0">
-          <h3 className="text-base font-bold text-brand-primary sm:text-lg">
+          <h3 className="text-base font-bold text-brand-primary min-[768px]:text-lg">
             {job.title}
           </h3>
           <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-brand-secondary">
@@ -21,7 +21,7 @@ export default function RecommendedJobCard({ job }: RecommendedJobCardProps) {
             </span>
             <span className="flex items-center gap-1.5">
               <MapPin className="h-4 w-4 shrink-0" strokeWidth={1.75} />
-              {job.location.country},{job.location.city}
+              {job.location.country}, {job.location.city}
             </span>
           </div>
         </div>
@@ -32,7 +32,6 @@ export default function RecommendedJobCard({ job }: RecommendedJobCardProps) {
               <span>-</span>
               <span>{job.salary.max}</span>
             </div>
-
             <div className="flex items-center">
               <span>{job.salary.currency}</span>
               <span>/</span>
