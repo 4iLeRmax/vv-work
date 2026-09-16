@@ -31,13 +31,13 @@ export default function Hero() {
           <HeroSearchContainer />
           <div className="flex flex-col items-center gap-2 min-[768px]:flex-row min-[768px]:gap-1">
             <h2 className="text-brand-secondary">Популярні напрямки:</h2>
-            <ul className="flex flex-wrap items-center justify-center gap-1">
+            <div className="flex flex-wrap items-center justify-center gap-1">
               {categories.map((c) => (
                 <Tag firstColor="secondary" key={c}>
                   {c}
                 </Tag>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </Container>

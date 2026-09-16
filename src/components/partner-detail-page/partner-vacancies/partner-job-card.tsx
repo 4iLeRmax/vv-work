@@ -116,7 +116,11 @@ export default function PartnerJobCard({ job }: PartnerJobCardProps) {
           Опубліковано: <span className="font-bold">{job.postedAt}</span>
         </p>
         <div className="flex items-center gap-3">
-          <button className="w-10 h-10 shrink-0 rounded-md flex items-center justify-center border border-bor-primary bg-primary">
+          <button
+            type="button"
+            aria-label={`Зберегти вакансію: ${job.title}`}
+            className="w-10 h-10 shrink-0 rounded-md flex items-center justify-center border border-bor-primary bg-primary"
+          >
             <Bookmark size={14} className="text-brand-secondary" />
           </button>
           <ApplyForJob />

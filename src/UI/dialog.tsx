@@ -76,7 +76,14 @@ const DialogOverlay = ({ handleClose }: { handleClose: () => void }) => {
 const DialogContent = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <div className="relative">{children}</div>
+      <div
+        className="relative"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Форма відгуку на вакансію"
+      >
+        {children}
+      </div>
     </>
   );
 };
@@ -85,6 +92,8 @@ const DialogCloseButton = ({ handleClose }: { handleClose: () => void }) => {
   return (
     <>
       <button
+        type="button"
+        aria-label="Закрити діалог"
         onClick={handleClose}
         className="absolute top-10 right-10 bg-primary border border-bor-primary text-brand-secondary rounded-md w-8 h-8 flex items-center justify-center transition-colors "
       >

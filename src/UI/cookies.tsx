@@ -8,7 +8,7 @@ interface CookiesProps {
 export default function Cookies({ links }: CookiesProps) {
   return (
     <>
-      <ul className="flex items-center gap-3">
+         <nav aria-label="Хлібні крихти" className="flex items-center gap-3">
         {links.map((l, i) =>
           i !== links.length - 1 ? (
             <Link
@@ -28,7 +28,7 @@ export default function Cookies({ links }: CookiesProps) {
             </h2>
           ),
         )}
-      </ul>
+         </nav>
     </>
   );
 }

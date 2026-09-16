@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BaseModal from "../../../UI/base-modal";
 import { useForm, type SubmitHandler } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod/src/zod.js";
+import { zodResolver } from "@hookform/resolvers/zod";
 import {
   applyForJobScheme,
   type TApplyForJobScheme,
