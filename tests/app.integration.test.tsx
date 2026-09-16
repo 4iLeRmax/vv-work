@@ -276,7 +276,9 @@ describe("application routing", () => {
       screen.getByRole("button", { name: "Надіслати повідомлення" }),
     );
 
-    expect(await screen.findByText("Ім'я обов'язкове")).toBeInTheDocument();
+    expect(
+      await screen.findByText("Ім'я має містити щонайменше 2 символи"),
+    ).toBeInTheDocument();
 
     await user.type(screen.getByLabelText("Ваше ім'я *"), "Олена");
     await user.type(screen.getByLabelText("Телефон *"), "+380671234567");

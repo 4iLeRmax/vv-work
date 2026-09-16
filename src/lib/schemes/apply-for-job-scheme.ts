@@ -4,11 +4,11 @@ const ukrainianPhoneRegex = /^(?:\+380|380|0)\d{9}$/;
 
 const nameScheme = z
   .string()
-  .min(1, "Ім'я обов'язкове")
+  .min(2, "Ім'я має містити щонайменше 2 символи")
   .max(128, "Ім'я не повинно перевищувати 128 символів");
 
 const phoneScheme = z.preprocess(
-  (val) => (typeof val === "string" ? val.replace(/[\s()\-]/g, "") : val),
+  (val) => (typeof val === "string" ? val.replace(/[\s()-]/g, "") : val),
   z
     .string()
     .min(1, "Номер телефону обов'язковий")

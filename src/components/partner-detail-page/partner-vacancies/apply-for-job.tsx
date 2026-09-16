@@ -52,7 +52,7 @@ export default function ApplyForJob() {
       } else {
         setIsError(true);
       }
-    } catch (error) {
+    } catch {
       setIsError(true);
     }
   };

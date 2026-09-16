@@ -4,7 +4,7 @@ import clsx from "clsx";
 import Container from "../../../UI/container";
 import RecommendedJobsList from "./recommended-jobs-list";
 
-export const CATEGORIES = ["Усі", "Будівництво", "Логістика", "IT"] as const;
+const CATEGORIES = ["Усі", "Будівництво", "Логістика", "IT"] as const;
 
 export default function RecommendedJobs() {
   const [selectedCategory, setSelectedCategory] =
