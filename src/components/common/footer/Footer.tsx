@@ -1,5 +1,4 @@
 import { Mail, Phone } from "lucide-react";
-import React from "react";
 
 export default function Footer() {
   const columns = [

@@ -1,4 +1,3 @@
-import React from "react";
 import useQueryAllJobs from "../../../hooks/useQueryAllJobs";
 import { RecommendedJobsSkeleton } from "../../../UI/skeletons";
 import RetryBlock from "../../../UI/retry-block";

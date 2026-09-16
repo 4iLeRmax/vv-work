@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSearchContainer from "../../common/hero-search-container";
 import Tag from "../../../UI/tag";
 import Container from "../../../UI/container";

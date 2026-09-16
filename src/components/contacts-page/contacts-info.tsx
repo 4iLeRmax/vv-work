@@ -63,15 +63,17 @@ export default function ContactsInfo() {
   return (
     <>
       <div className="w-full">
-        <h2 className="text-brand-secondary">Загальні контакти</h2>
+        <h2 className="text-brand-secondary text-lg min-[768px]:text-xl">
+          Загальні контакти
+        </h2>
         <div className="flex flex-col items-start gap-4 mt-6">
           {contactsInfo.map((el) => (
             <InfoCard key={el.info} data={el} />
           ))}
         </div>
-        <div className="grid grid-cols-2 gap-2 mt-10">
+        <div className="grid grid-cols-1 min-[1280px]:grid-cols-2 gap-3 min-[768px]:gap-2 mt-8 min-[768px]:mt-10">
           {officeInfo.map((el) => (
-            <OfficeInfoCard officeInfo={el} />
+            <OfficeInfoCard key={el.location.city} officeInfo={el} />
           ))}
         </div>
       </div>

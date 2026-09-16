@@ -1,5 +1,3 @@
-// Hero.tsx
-import React from "react";
 import Tag from "../../../UI/tag";
 import type { JobCategory } from "../../../types";
 import HeroSearchContainer from "../../common/hero-search-container";

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Hero from "../../components/home-page/hero/Hero";
 import TrustedBy from "../../components/home-page/trusted-by/trusted-by";
 import Category from "../../components/home-page/category/category";

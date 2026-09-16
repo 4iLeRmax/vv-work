@@ -1,5 +1,4 @@
 import { Search } from "lucide-react";
-import React, { useState } from "react";
 
 interface PartnerJobSearchProps {
   searchValue: string;
@@ -12,7 +11,7 @@ export default function PartnerJobSearch({
 }: PartnerJobSearchProps) {
   return (
     <>
-      <div className="w-full flex items-center gap-2 text-brand-secondary bg-white border border-bor-primary rounded-2xl px-3">
+      <div className="w-full min-w-0 flex-1 flex items-center gap-2 text-brand-secondary bg-white border border-bor-primary rounded-2xl px-3">
         <Search size={20} className="text-brand-accent" />
         <input
           type="text"

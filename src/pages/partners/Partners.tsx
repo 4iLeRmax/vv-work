@@ -1,4 +1,3 @@
-import React from "react";
 import PartnersHero from "../../components/partners-page/partners-hero/partners-hero";
 import PartnersContent from "../../components/partners-page/partners-content/partners-content";
 import EmployerCTA from "../../components/common/employer-cta/employer-cta";

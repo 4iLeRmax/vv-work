@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import PartnersDetailHero from "../../../components/partner-detail-page/partners-detail-hero/partners-detail-hero";
 import useQueryPartnerBySlug from "../../../hooks/useQueryPartnerBySlug";

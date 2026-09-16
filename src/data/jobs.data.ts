@@ -1,4 +1,4 @@
-import type { Job, JobCategory } from "../types";
+import type { Job } from "../types";
 
 export const jobs: Job[] = [
   {

@@ -1,4 +1,3 @@
-import React from "react";
 import Tag from "../../../UI/tag";
 import Categories from "./categories";
 import Container from "../../../UI/container";

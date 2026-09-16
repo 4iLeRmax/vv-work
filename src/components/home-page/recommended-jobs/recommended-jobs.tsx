@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import Tag from "../../../UI/tag";
 import clsx from "clsx";

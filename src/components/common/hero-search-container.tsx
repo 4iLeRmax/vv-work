@@ -1,6 +1,4 @@
-// hero-search-container.tsx
 import { MapPin, Search } from "lucide-react";
-import React from "react";
 
 export default function HeroSearchContainer() {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import DirectionCard from "./direction-card";
 import Container from "../../../UI/container";
 

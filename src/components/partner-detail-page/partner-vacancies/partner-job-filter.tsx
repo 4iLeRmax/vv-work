@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { ChevronDown, Funnel } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { JOB_CATEGORIES, type JobCategory } from "../../../types";
 
 const ALL = "Усі" as const;
@@ -28,9 +28,9 @@ export default function PartnerJobFilter({
 
   return (
     <>
-      <div className="relative">
+      <div className="relative w-full min-[768px]:w-60 shrink-0">
         <button
-          className="w-60 flex items-center justify-between bg-white border border-bor-primary rounded-2xl px-3"
+          className="w-full flex items-center justify-between bg-white border border-bor-primary rounded-2xl px-3"
           onClick={handleToggle}
         >
           <div className="flex items-center gap-2 py-3">

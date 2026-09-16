@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BaseModal from "../../../UI/base-modal";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod/src/zod.js";
@@ -58,7 +58,7 @@ export default function ApplyForJob() {
   };
 
   const success = (
-    <div className="w-120 shrink-0 bg-white border border-bor-primary rounded-xl p-10">
+    <div className="w-full max-w-120 shrink-0 bg-white border border-bor-primary rounded-xl p-6 min-[768px]:p-10">
       <div className="flex flex-col items-center justify-center text-center py-10 gap-4">
         <div className="text-2xl font-bold text-green-500 flex items-center gap-2">
           <Check size={20} />
@@ -78,8 +78,7 @@ export default function ApplyForJob() {
   );
 
   const content = (
-    <div className="w-120 shrink-0 bg-white border border-bor-primary rounded-xl p-10">
-      {" "}
+    <div className="w-full max-w-120 shrink-0 bg-white border border-bor-primary rounded-xl p-6 min-[768px]:p-10">
       <h2 className="text-brand-primary text-2xl">Напишіть нам</h2>
       <p className="text-brand-secondary text-sm">
         Заповніть форму, і ми відповімо вам якнайшвидше.

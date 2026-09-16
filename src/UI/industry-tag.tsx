@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function IndustryTag({ industry }: { industry: string }) {
   return (
     <>

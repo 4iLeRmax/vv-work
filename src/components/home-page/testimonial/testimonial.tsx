@@ -1,4 +1,3 @@
-import React from "react";
 import Tag from "../../../UI/tag";
 import { Quote } from "lucide-react";
 import Container from "../../../UI/container";

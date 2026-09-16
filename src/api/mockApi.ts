@@ -52,7 +52,7 @@ export async function fetchAllJobs(): Promise<Job[]> {
 export async function submitApplication(
   payload: TApplyForJobScheme,
 ): Promise<{ success: true }> {
-  await simulateRequest(null);
+  await simulateRequest(payload);
   return { success: true };
 }
 

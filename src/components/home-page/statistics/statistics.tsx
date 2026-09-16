@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../../../UI/container";
 
 const STATS = [

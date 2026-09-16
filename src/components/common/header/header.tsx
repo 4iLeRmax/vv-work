@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../../../UI/Logo";
 import Navigation from "./header-navigation";
 import HeaderActions from "./header-actions";
