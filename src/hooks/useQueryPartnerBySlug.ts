@@ -36,5 +36,5 @@ export default function useQueryPartnerBySlug({
     fetchData();
   }, [fetchData]);
 
-  return { data, isLoading, error, retry: fetchData };
+  return { data: data!, isLoading, error, retry: fetchData };
 }

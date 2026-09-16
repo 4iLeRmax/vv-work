@@ -1,6 +1,7 @@
 import { partners } from "../data/partners.data";
 import { jobs } from "../data/jobs.data";
 import type { Job, Partner } from "../types";
+import type { TApplyForJobScheme } from "../lib/schemes/apply-for-job-scheme";
 
 const MIN_DELAY_MS = 300;
 const MAX_DELAY_MS = 800;
@@ -48,15 +49,8 @@ export async function fetchAllJobs(): Promise<Job[]> {
   return simulateRequest(jobs);
 }
 
-interface SubmitApplicationPayload {
-  jobId: string;
-  name: string;
-  contact: string;
-  message?: string;
-}
-
 export async function submitApplication(
-  payload: SubmitApplicationPayload,
+  payload: TApplyForJobScheme,
 ): Promise<{ success: true }> {
   await simulateRequest(null);
   return { success: true };

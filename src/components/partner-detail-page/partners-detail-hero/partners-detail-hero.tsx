@@ -56,13 +56,11 @@ export default function PartnersDetailHero({ partner }: { partner: Partner }) {
                 {partner.name}
               </h1>
               <p className="text-brand-secondary mt-7">{partner.description}</p>
-              {/*  */}
               <div className="flex items-center gap-8 mt-7">
                 {stats.map((el, i) => (
                   <InfoCard key={i} data={el} />
                 ))}
               </div>
-              {/*  */}
             </div>
             <div className="w-120 h-80 overflow-hidden rounded-xl">
               <img

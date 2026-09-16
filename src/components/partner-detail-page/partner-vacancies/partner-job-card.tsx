@@ -12,6 +12,7 @@ import {
   TrendingUpDown,
 } from "lucide-react";
 import Tag from "../../../UI/tag";
+import ApplyForJob from "./apply-for-job";
 
 interface PartnerJobCardProps {
   job: Job;
@@ -96,7 +97,7 @@ export default function PartnerJobCard({ job }: PartnerJobCardProps) {
             <h2 className="text-md font-bold">Вимоги</h2>
             <ul className="list-disc pl-5 marker:text-brand-accent mt-2">
               {job.requirements.map((req, i) => (
-                <li key={i}>{req}</li>
+                <li key={req}>{req}</li>
               ))}
             </ul>
           </div>
@@ -115,7 +116,7 @@ export default function PartnerJobCard({ job }: PartnerJobCardProps) {
           <Languages size={14} className="text-brand-secondary" />
           <div className="flex items-center gap-1">
             {job.languageRequirements.map((l) => (
-              <Perk>{l}</Perk>
+              <Perk key={l}>{l}</Perk>
             ))}
           </div>
         </div>
@@ -130,9 +131,7 @@ export default function PartnerJobCard({ job }: PartnerJobCardProps) {
             <button className="w-10 h-10 rounded-md flex items-center justify-center border border-bor-primary bg-primary">
               <Bookmark size={14} className="text-brand-secondary" />
             </button>
-            <button className="px-7 py-3 rounded-md bg-brand-primary text-white">
-              Відгукнутися
-            </button>
+            <ApplyForJob />
           </div>
         </div>
         {/*  */}

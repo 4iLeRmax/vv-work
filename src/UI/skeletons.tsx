@@ -62,7 +62,32 @@ export function PartnerVacanciesSkeleton() {
 export function PartnerDetailPageSkeleton() {
   return (
     <>
-      <div></div>
+      <section className="py-14">
+        <Container>
+          <div className="flex items-start justify-between gap-20">
+            <div>
+              <div className="flex items-center gap-3">
+                <div className="w-20 h-6 rounded-md bg-bor-primary"></div>
+                <div className="w-20 h-6 rounded-md bg-bor-primary"></div>
+                <div className="w-20 h-6 rounded-md bg-bor-primary"></div>
+              </div>
+              <div className="flex items-center gap-3 mt-7">
+                <div className="w-20 h-6 rounded-md bg-bor-primary"></div>
+                <div className="w-20 h-6 rounded-md bg-bor-primary"></div>
+              </div>
+              <div className="mt-3 w-80 h-10 rounded-md bg-bor-primary"></div>
+              <div className="mt-7 w-full h-6 rounded-md bg-bor-primary"></div>
+              <div className="mt-2 w-3/5 h-6 rounded-md bg-bor-primary"></div>
+              <div className="mt-7 flex items-center gap-8">
+                <div className="w-35 h-12 rounded-md bg-bor-primary"></div>
+                <div className="w-35 h-12 rounded-md bg-bor-primary"></div>
+                <div className="w-35 h-12 rounded-md bg-bor-primary"></div>
+              </div>
+            </div>
+            <div className="w-120 h-80 rounded-xl bg-bor-primary"></div>
+          </div>
+        </Container>
+      </section>
     </>
   );
 }

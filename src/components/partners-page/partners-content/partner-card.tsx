@@ -56,7 +56,7 @@ export default function PartnerCard({ partner }: PartnerCardProps) {
 
             <div className="flex items-center flex-wrap gap-1 mt-4">
               {partner.perks.map((perk) => (
-                <Perk key={perk}>perk</Perk>
+                <Perk key={perk}>{perk}</Perk>
               ))}
             </div>
             <Link

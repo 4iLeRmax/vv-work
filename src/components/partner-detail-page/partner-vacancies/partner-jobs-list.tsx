@@ -4,18 +4,6 @@ import { useJobFilters } from "../../../hooks/useJobFilters";
 import Header from "./header";
 import PartnerJobSearch from "./partner-job-search";
 import PartnerJobFilter from "./partner-job-filter";
-import Tag from "../../../UI/tag";
-import IndustryTag from "../../../UI/industry-tag";
-import Perk from "../../../UI/perk";
-import {
-  Bookmark,
-  Briefcase,
-  Hotel,
-  Languages,
-  Laptop,
-  MapPin,
-  TrendingUpDown,
-} from "lucide-react";
 import PartnerJobCard from "./partner-job-card";
 
 export default function PartnerJobsList({ jobs }: { jobs: Job[] }) {
